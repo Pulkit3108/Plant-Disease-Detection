@@ -5,4 +5,8 @@ The accuracy is approximately 93% on testing dataset.
 
 > Link to Dataset: https://www.kaggle.com/datasets/emmarex/plantdisease
 
+## Working
 
+> Image Upload
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/46241207/165121699-4a2b67e5-5efb-4ceb-84fe-bf67efc851e2.gif)
