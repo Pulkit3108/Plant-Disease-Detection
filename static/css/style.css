@@ -1,0 +1,215 @@
+/* NAVBAR */
+.navcss {
+    background-color: #055526;
+}
+
+/* WEATHER */
+.weather-container {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    margin-right: 1em;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 1em;
+    border-radius: 1.875em;
+    width: 100%;
+    max-width: 18.75em;
+    float: right;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.75em;
+    width: 2.55em;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search-button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 1.5em;
+    background: #5e59596b;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+    width: calc(100% - 4.25em);
+}
+
+input.search-bar:hover {
+    background: #7c7c7c6b;
+}
+
+.temp {
+    margin: 0.2em;
+    margin-bottom: 0.4em;
+}
+
+.city {
+    margin: 0.2em;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 0.5em;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 1.25em;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 1.25em;
+}
+
+/* BACKGROUND */
+body::after {
+    content: "";
+    background: url('/static/img/jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.all {
+    display: flex;
+    width: 30vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.icon-nav {
+    display: inline;
+    margin-right: 35vw;
+}
+
+/* IMAGE UPLOAD */
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 0.938em 2.25em;
+    background: #03876c;
+    color: #fff;
+    font-size: 1.2em;
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+.upload-label:hover {
+    background: #34495E;
+    color: #39D2B4;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.img-preview {
+    width: 16em;
+    height: 16em;
+    position: relative;
+    border: 0.125em solid black;
+    box-shadow: 0em 0.125em 0.25em 0em rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 16em 16em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.predict {
+    margin-left: 30%;
+}
+
+.loader {
+    border: 0.5em solid #f3f3f3;
+    border-top: 0.5em solid #3498db;
+    border-radius: 50%;
+    width: 3.125em;
+    height: 3.125em;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#result {
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    border-radius: 1.2em;
+}
+
+#result img {
+    display: block;
+    max-width: 78vw;
+    max-height: 78vh;
+    width: auto;
+    height: auto;
+    border: 0.125em solid black;
+    box-shadow: 0em 0.125em 0.25em 0em rgba(0, 0, 0, 0.1);
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
