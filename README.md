@@ -4,6 +4,8 @@ A Web App that is made using Flask Web Framework in Python to Detect Plant disea
 
 > Link to Dataset: https://www.kaggle.com/datasets/emmarex/plantdisease
 
+> Weather API Link: https://openweathermap.org/api
+
 ## Working
 
 > Image Upload
