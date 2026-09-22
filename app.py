@@ -8,6 +8,7 @@ import os
 
 # INITIALIZATION
 app = Flask(__name__)
+app.config['OPENWEATHER_API_KEY'] = os.environ.get('OPENWEATHER_API_KEY', '')
 
 # LOADING MODEL
 model = load_model('plantDiseaseDetection.h5')
