@@ -53,7 +53,7 @@ The training dataset is referenced in the [PlantVillage Kaggle dataset](https://
 - The displayed value is the model's confidence for its selected class, not a professional plant-health diagnosis.
 - Weather depends on the optional OpenWeather service and a user-supplied key.
 
-## Application Preview
+## Preview
 
 ![Plant Disease Detection interface](Docs/media/application-home.png)
 
